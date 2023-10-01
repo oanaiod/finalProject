@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.116">
+  <properties />
+  
+  
+            <testcase name="loginWithSQLAsDataSource" time="11.639" classname="Tests.RegisterDataSourceTests" />
+                <testcase name="loginWithSQLAsDataSource" time="9.477" classname="Tests.RegisterDataSourceTests" />
+      
+</testsuite>
