@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="136.419">
+           time="109.385">
   <properties />
   
   
-            <testcase name="updateCart" time="27.937" classname="Tests.ShoppingCart" />
-                <testcase name="FreeShipping" time="34.840" classname="Tests.ShoppingCart" />
-                <testcase name="addMultipleProducts" time="21.320" classname="Tests.ShoppingCart" />
-                <testcase name="IncreaseQuantity" time="25.788" classname="Tests.ShoppingCart" />
-                <testcase name="deleteOneProd" time="26.534" classname="Tests.ShoppingCart" />
+            <testcase name="addMultipleProducts" time="16.158" classname="Tests.ShoppingCart" />
+                <testcase name="freeShippingTest" time="31.239" classname="Tests.ShoppingCart" />
+                <testcase name="deleteOneProdTest" time="21.836" classname="Tests.ShoppingCart" />
+                <testcase name="increaseQuantity" time="14.389" classname="Tests.ShoppingCart" />
+                <testcase name="updateCart" time="25.763" classname="Tests.ShoppingCart" />
       
 </testsuite>

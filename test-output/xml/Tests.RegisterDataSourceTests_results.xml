@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.116">
+           time="19.794">
   <properties />
   
   
-            <testcase name="loginWithSQLAsDataSource" time="11.639" classname="Tests.RegisterDataSourceTests" />
-                <testcase name="loginWithSQLAsDataSource" time="9.477" classname="Tests.RegisterDataSourceTests" />
+            <testcase name="registerWithSQLAsDataSource" time="13.745" classname="Tests.RegisterDataSourceTests" />
+                <testcase name="registerWithSQLAsDataSource" time="6.049" classname="Tests.RegisterDataSourceTests" />
       
 </testsuite>

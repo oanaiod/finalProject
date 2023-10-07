@@ -1,10 +1,5 @@
 package PageObjects;
-
-import Exceptions.CustomException;
-import com.gargoylesoftware.htmlunit.Page;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.MoveTargetOutOfBoundsException;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,8 +9,9 @@ import java.time.Duration;
 
 public class ShoppingCartPage {
 
-    WebDriver driver;
-    WebDriverWait wait;
+        private WebDriver driver;
+        private WebDriverWait wait;
+
     @FindBy(xpath = "//*[@id=\"header\"]/div[1]/div[2]/div/div/div/div[3]/div/div/a")
     private WebElement shoppingCart;
     @FindBy(xpath = "//*[@id=\"header\"]/div[1]/div[2]/div/div/div/div[3]/div/div/div/div/div[1]/a/span[2]")
@@ -62,7 +58,7 @@ public class ShoppingCartPage {
     }
 
     //It will go the shopping cart page
-    public void GoToShoppingPage()
+    public void goToShoppingPage()
     {
         wait.until(ExpectedConditions.elementToBeClickable(shoppingCart));
         shoppingCart.click();
@@ -71,7 +67,7 @@ public class ShoppingCartPage {
     }
 
     //It will search all the apple products on store
-    public void SearchAppleProd() {
+    public void searchAppleProd() {
         wait.until(ExpectedConditions.elementToBeClickable(categories));
         categories.click();
         wait.until(ExpectedConditions.elementToBeClickable(apple));
@@ -80,41 +76,36 @@ public class ShoppingCartPage {
     }
 
     //It will add the first product to cart
-    public void AddProductsToCart()
+    public void addProductsToCart()
     {
         wait.until(ExpectedConditions.elementToBeClickable(addCartBtn));
         addCartBtn.click();
     }
 
     //It will delete the first product from cart
-    public void DeleteFirstProd()
+    public void deleteFirstProd()
     {
         wait.until(ExpectedConditions.elementToBeClickable(deleteFirstProd));
         deleteFirstProd.click();
     }
 
     //It will refresh the page
-    public void CloseCartPopUp()
+    public void closeCartPopUp()
     {
         driver.navigate().refresh();
 
     }
 
     //It will erase all the products from cart
-    public void EmptyCart()
+    public void emptyCart()
     {
         wait.until(ExpectedConditions.elementToBeClickable(emptyCartBtn));
         emptyCartBtn.click();
         driver.switchTo().alert().accept();
     }
 
-//    public boolean CartIsEmpty(){
-//        wait.until(ExpectedConditions.visibilityOf(emptyCartBtn));
-//        return emptyCartBtn.isDisplayed();
-//    }
-
     //It will add 2 products of the same type in cart
-    public void AddMultipleProductsToCart()
+    public void addMultipleProductsToCart()
     {
         wait.until(ExpectedConditions.elementToBeClickable(plusProduct));
         plusProduct.click();
@@ -123,7 +114,7 @@ public class ShoppingCartPage {
 
     }
 
-    public void IncreaseQuantityProd()
+    public void increaseQuantityProd()
     {
         wait.until(ExpectedConditions.elementToBeClickable(plusProduct));
         plusProduct.click();
@@ -132,14 +123,14 @@ public class ShoppingCartPage {
     }
 
     //It will go to cart by accessing the shortcut cart display
-    public void GoToCartByShortcut()
+    public void goToCartByShortcut()
     {
         wait.until(ExpectedConditions.elementToBeClickable(shoppingCart1));
         shoppingCart1.click();
     }
 
     //It will delete one of the 2 products of the same type by pressing "-"
-    public void DeleteDuplicateProd()
+    public void deleteDuplicateProd()
     {
         wait.until(ExpectedConditions.elementToBeClickable(minusProd));
         minusProd.click();
@@ -147,31 +138,31 @@ public class ShoppingCartPage {
     }
 
     //It will return true if the product is visible in the cart
-    public boolean ProductIsInCart(){
+    public boolean productIsInCart(){
         wait.until(ExpectedConditions.visibilityOf(prod1InCart));
         return prod1InCart.isDisplayed();
     }
 
     //It will return true if the shortcut cart display is visible
-    public boolean ShortcutToCart() {
+    public boolean shortcutToCart() {
         wait.until(ExpectedConditions.visibilityOf(shortcutToCart));
         return shortcutToCart.isDisplayed();
     }
 
     //It will return a true value if the alert is present
-    public boolean ProdDeleted() {
+    public boolean prodDeleted() {
         wait.until(ExpectedConditions.visibilityOf(prodDelAlert));
         return prodDelAlert.isDisplayed();
     }
 
     //It will return true if the alert message "cart was updated" after deleting a product is visible
-    public boolean CartAlert() {
+    public boolean cartAlert() {
         wait.until(ExpectedConditions.visibilityOf(cartAlert));
         return cartAlert.isDisplayed();
     }
 
     //It will return true if the quantity of the product in 3
-    public boolean QuantProd2() throws InterruptedException {
+    public boolean quantProd2() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(quantityProd2));
         Thread.sleep(8000);
         String prodVl = quantityProd2.getAttribute("data-quantity");
@@ -182,7 +173,7 @@ public class ShoppingCartPage {
     }
 
     //It will return true if the product quantity is 1
-    public boolean ProdUpdated() throws InterruptedException {
+    public boolean prodUpdated() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(prodValue));
         Thread.sleep(5000);
         String prodVl = prodValue.getAttribute("value");
@@ -193,7 +184,7 @@ public class ShoppingCartPage {
     }
 
     //It will return true if the value is more or equal to 99 which means you have free shipping
-    public boolean FreeShipping() throws InterruptedException {
+    public boolean freeShipping() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(freeShipping));
         Thread.sleep(8000);
         String prodVl = freeShipping.getAttribute("value");

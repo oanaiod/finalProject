@@ -1,10 +1,7 @@
 package PageObjects;
 
 import Exceptions.CustomException;
-import com.gargoylesoftware.htmlunit.Page;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.MoveTargetOutOfBoundsException;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -42,7 +39,7 @@ public class RegistrationPage {
         PageFactory.initElements(driver, this);
     }
     //It will type the provided data (user, email, password)
-    public void  RegPage(String user, String email, String password) throws CustomException {
+    public void  regPage(String user, String email, String password) throws CustomException {
         wait.until(ExpectedConditions.elementToBeClickable(regUserName));
         regUserName.clear();
         regUserName.sendKeys(user);

@@ -1,19 +1,14 @@
 package Tests;
 
 import Exceptions.CustomException;
-import ObjectModel.LoginModel;
 import ObjectModel.RegisterModel;
 import PageObjects.LoginPage;
 import PageObjects.RegistrationPage;
-import TestListeners.ExtendReports.ExtentTestManager;
 import Utils.Tools;
-import com.aventstack.extentreports.Status;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.annotations.*;
-import java.lang.reflect.Method;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -49,13 +44,13 @@ public class RegisterDataSourceTests extends BaseTest{
         return dp.iterator();
     }
 
-    // For Login features with sql
+    // For register features with sql
     @Test(dataProvider = "mysql")
-    public void loginWithSQLAsDataSource(RegisterModel rm) throws CustomException {
+    public void registerWithSQLAsDataSource(RegisterModel rm) throws CustomException {
         Registrationlm(rm);
     }
 
-    //   login with loginModel
+    //Register with registerModel
     private void Registrationlm(RegisterModel rm) throws CustomException {
         System.out.println(rm);
         registerTest(rm.getAccount().getUsername(), rm.getAccount().getEmail(), rm.getAccount().getPassword(), rm.getError());
@@ -64,14 +59,12 @@ public class RegisterDataSourceTests extends BaseTest{
     public void registerTest(String name, String email, String password, String error) throws CustomException
     {
        System.out.println("Login with username:" + name + "/password:" + password);
-
-        driver.get(baseUrl);
         loginPage = new LoginPage(driver);
         loginPage.goToRegistrationPage();
         registrationPage = new RegistrationPage(driver);
-        registrationPage.RegPage(name, email, password);
+        registrationPage.regPage(name, email, password);
 
-        System.out.println("Login Finished, verify error message");
+        System.out.println("Registration Finished, verify error message");
         Assert.assertEquals(registrationPage.emailError(), error);
         Reporter.log("Verify that an error message is displayed when trying to register without an email");
     }

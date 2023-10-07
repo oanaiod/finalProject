@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52dddc6e-beb4-4152-9cfd-baf062a00d71" name="Changes" comment="finalProject_01">
+    <list default="true" id="52dddc6e-beb4-4152-9cfd-baf062a00d71" name="Changes" comment="Merge branch 'master' of https://github.com/oanaiod/finalProject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/HoverPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/ExtendReports/ExtentManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/ExtendReports/ExtentTestListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestListeners/ExtendReports/ExtentTestManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginDataSourceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginDataSourceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegisterDataSourceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegisterDataSourceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/output.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/xml/Tests.LoginDataSourceTests_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/Tests.LoginDataSourceTests_results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/xml/Tests.RegisterDataSourceTests_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/Tests.RegisterDataSourceTests_results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/xml/Tests.ShoppingCart_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/xml/Tests.ShoppingCart_results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +57,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -50,6 +69,9 @@
         <option name="url" value="https://github.com/oanaiod/finalProject.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2VTFL9mORMnkbkntcAXPvVlp6TH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -59,18 +81,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/finalProject/finalProject/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/finalProject-SaveFile",
+    "onboarding.tips.debug.path": "D:/finalProject/finalProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\finalProject\finalProject\src\test" />
@@ -113,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterDataSourceTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginDataSourceTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="finalProject" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +145,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.RegisterDataSourceTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginDataSourceTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -150,10 +173,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/finalProject/finalProject/regression.xml" />
-        <item itemvalue="TestNG.D:/finalProject/finalProject/smoke.xml" />
-        <item itemvalue="TestNG.D:/finalProject/finalProject/testing.xml" />
         <item itemvalue="TestNG.ShoppingCart" />
-        <item itemvalue="TestNG.RegisterDataSourceTests" />
+        <item itemvalue="TestNG.D:/finalProject/finalProject/smoke.xml" />
+        <item itemvalue="TestNG.LoginDataSourceTests" />
+        <item itemvalue="TestNG.D:/finalProject/finalProject/testing.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696179830262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/oanaiod/finalProject">
+      <created>1696181085613</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696181085613</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="finalProject_01" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalProject_01" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/oanaiod/finalProject" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/oanaiod/finalProject" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

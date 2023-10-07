@@ -27,13 +27,13 @@ public class BrowserUtils {
 //                driver.manage().window().maximize();
 //                return driver;
 //            }
-//            case ("edge"): {
-//                WebDriverManager.edgedriver().setup();
-////                driver = new EdgeDriver(getEdgeOptions());
-//                driver = new EdgeDriver();
-//                driver.manage().window().maximize();
-//                return driver;
-//            }
+            case ("edge"): {
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver(getEdgeOptions());
+                driver = new EdgeDriver();
+                driver.manage().window().maximize();
+                return driver;
+            }
               default: {
                 System.out.println("Driver is not supported.");
                 return null;
